@@ -217,7 +217,7 @@ const resendEmailVerification = asynchandler(async (req, res) => {
     .status(200)
     .json(new ApiResponse(200, {}, "Mail has been sent to your email ID"));
 });
-
+//making access token to refresh token after expiry
 const refreshAccessToken = asynchandler(async (req, res) => {
   const incomingRefreshToken =
     req.cookies.refreshToken || req.body.refreshToken;
