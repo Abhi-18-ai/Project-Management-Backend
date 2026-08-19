@@ -1,0 +1,4 @@
+# what we give the condition in .prettier file it explicit that rule , what we write here
+
+node_modules
+env
